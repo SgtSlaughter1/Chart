@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    width: 200px; 
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar button {
+    display: block; 
+    width: 100%; 
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.content {
+    flex: 1; 
+    padding: 20px;
+}
+
+#task-list {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+canvas {
+    width: 100%; /* Full width for the chart */
+    height: 300px; /* Fixed height for the chart */
+}

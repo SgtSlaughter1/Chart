@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Testimonials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f7;
+            padding: 5% 10%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .testimonials-container {
+            display: flex;
+            max-width: 1200px;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            gap: 20px;
+        }
+
+        .right-column {
+            width: 25%;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .testimonial-card {
+            border-radius: 15px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .card-header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .profile-info h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .profile-info p {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .testimonial-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .testimonial-quote {
+            font-size: 14px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .daniel {
+            background-color: #7e57c2;
+            color: white;
+            width: 70%;
+        }
+
+        .jonathan {
+            background-color: #455a64;
+            color: white;
+            width: 30%;
+        }
+
+        .jeanette {
+            background-color: white;
+            color: #333;
+            width: 40%;
+        }
+
+        .patrick {
+            background-color: #455a64;
+            color: white;
+            width: 60%;
+        }
+
+        .kira {
+            background-color: white;
+            color: #333;
+        }
+
+        .card-white .profile-info p,
+        .card-white .testimonial-quote {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 950px) {
+            .testimonials-container {
+                flex-direction: column;
+            }
+            
+            .left-column, .right-column {
+                width: 100%;
+            }
+
+            .row {
+                flex-direction: column;
+            }
+            
+            .daniel, .jonathan, .jeanette, .patrick {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="testimonials-container">
+        <div class="left-column">
+            <!-- First row: Daniel and Jonathan -->
+            <div class="row">
+                <!-- Daniel's testimonial -->
+                <div class="testimonial-card daniel">
+                    <div class="card-header">
+                        <img src="/api/placeholder/40/40" alt="Daniel Clifford">
+                        <div class="profile-info">
+                            <h3>Daniel Clifford</h3>
+                            <p>Verified Graduate</p>
+                        </div>
+                    </div>
+                    <h2 class="testimonial-title">I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny's worth.</h2>
+                    <p class="testimonial-quote">"I was an EMT for many years before I joined the bootcamp. I've been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I've successfully switched careers, working as a Software Engineer at a VR startup."</p>
+                </div>
+
+                <!-- Jonathan's testimonial -->
+                <div class="testimonial-card jonathan">
+                    <div class="card-header">
+                        <img src="/api/placeholder/40/40" alt="Jonathan Walters">
+                        <div class="profile-info">
+                            <h3>Jonathan Walters</h3>
+                            <p>Verified Graduate</p>
+                        </div>
+                    </div>
+                    <h2 class="testimonial-title">The team was very supportive and kept me motivated</h2>
+                    <p class="testimonial-quote">"I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I've made in myself."</p>
+                </div>
+            </div>
+
+            <!-- Second row: Jeanette and Patrick -->
+            <div class="row">
+                <!-- Jeanette's testimonial -->
+                <div class="testimonial-card jeanette card-white">
+                    <div class="card-header">
+                        <img src="/api/placeholder/40/40" alt="Jeanette Harmon">
+                        <div class="profile-info">
+                            <h3>Jeanette Harmon</h3>
+                            <p>Verified Graduate</p>
+                        </div>
+                    </div>
+                    <h2 class="testimonial-title">An overall wonderful and rewarding experience</h2>
+                    <p class="testimonial-quote">"Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love."</p>
+                </div>
+
+                <!-- Patrick's testimonial -->
+                <div class="testimonial-card patrick">
+                    <div class="card-header">
+                        <img src="/api/placeholder/40/40" alt="Patrick Abrams">
+                        <div class="profile-info">
+                            <h3>Patrick Abrams</h3>
+                            <p>Verified Graduate</p>
+                        </div>
+                    </div>
+                    <h2 class="testimonial-title">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h2>
+                    <p class="testimonial-quote">"The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right column: Kira -->
+        <div class="right-column">
+            <div class="testimonial-card kira card-white">
+                <div class="card-header">
+                    <img src="/api/placeholder/40/40" alt="Kira Whittle">
+                    <div class="profile-info">
+                        <h3>Kira Whittle</h3>
+                        <p>Verified Graduate</p>
+                    </div>
+                </div>
+                <h2 class="testimonial-title">Such a life-changing experience. Highly recommended!</h2>
+                <p class="testimonial-quote">"Before joining the bootcamp, I've never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I've often referred to it during interviews as an example of my development experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend!"</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

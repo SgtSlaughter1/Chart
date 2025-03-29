@@ -3,34 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager</title>
+    <title>Heart Attack Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <aside class="sidebar">
             <h2>Navigation</h2>
-            <button id="show-dashboard">Dashboard</button>
-            <button id="show-tasks">My Tasks</button>
-            
+            <button id="show-dashboard" class="active">Dashboard</button>
+            <button id="show-patients">Patients</button>
         </aside>
         <main class="content">
-            <section id="task-section">
-                <h1>My Tasks</h1>
-                <form id="task-form">
-                    <input type="text" id="task-input" placeholder="Add a new task" required>
-                    <select id="category-input">
-                        <option value="Work">Work</option>
-                        <option value="Personal">Personal</option>
-                        <option value="Urgent">Urgent</option>
-                    </select>
-                    <button type="submit">Add Task</button>
-                </form>
-                <ul id="task-list"></ul>
-            </section>
             <section id="dashboard-section">
-                <h1>Dashboard</h1>
-                <canvas id="taskChart"></canvas>
+                <h1>Heart Attack Analysis Dashboard</h1>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total Patients</h3>
+                        <p id="total-patients">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Average Age</h3>
+                        <p id="avg-age">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>High Risk</h3>
+                        <p id="high-risk">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Critical Cases</h3>
+                        <p id="critical-cases">0</p>
+                    </div>
+                </div>
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <h3>Gender Distribution</h3>
+                        <canvas id="genderChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Age Distribution</h3>
+                        <canvas id="ageChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Blood Pressure Levels</h3>
+                        <canvas id="bpChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Cholesterol Distribution</h3>
+                        <canvas id="cholesterolChart"></canvas>
+                    </div>
+                </div>
+            </section>
+            <section id="patients-section">
+                <h1>Patient Records</h1>
+                <div id="patients-list"></div>
             </section>
         </main>
     </div>
